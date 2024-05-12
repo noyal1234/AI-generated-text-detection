@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Google Sans Display, sans-serif;
+}
+
+body {
+  background-color: #0c0c0d;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://cdn.dribbble.com/users/32512/screenshots/3363261/the_wave_natural_ai_by_gleb.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.main-heading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading h1 {
+  text-align: center;
+  font-family: Google Sans Display, sans-serif;
+  font-size: min(max(60px, 11.111vw), 160px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.76px;
+  margin-bottom: 25px;
+  opacity: 1;
+  transition: opacity 1s ease, font-size 0.3s ease;
+  background: -webkit-linear-gradient(#eee, #C0C0C0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.small-txt {
+  font-size: min(max(60px, 11.111vw), 132px);
+}
+
+nav {
+  height: 64px;
+  min-height: 64px;
+  padding: 2%;
+  background: transparent;
+  overflow-x: clip;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
+  min-height: 64px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box1 {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #e8eaed;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.box2 {
+  width: 1.4%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.box2 img {
+  width: 100%;
+}
+
+#main {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin: 20px;
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container1 {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.outer1 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+  border-top: 8px solid #161515;
+  position: relative;
+}
+
+.col1 {
+  width: 70%;
+  height: 95%;
+  background-color: #271f2e;
+  color: white;
+  padding: 3%;
+  border-radius: 1rem;
+}
+
+.col1 img {
+  width: 3%;
+  position: relative;
+  left: 842px;
+  top: -10px;
+  transition: scale 0.2s ease;
+  cursor: pointer;
+}
+
+#delete:active{
+  scale: 1.3;
+}
+
+.col2 {
+  width: 30%;
+  height: 95%;
+  background-color: #422740;
+  background-color: rgb(29, 27, 27);
+  border-radius: 1rem;
+}
+
+.text {
+  position: relative;
+  top: -50%;
+}
+
+.input {
+  width: 100%;
+  height: 83%;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  background: transparent;
+  resize: none;
+  position: relative;
+  top: 0%;
+}
+
+.input::placeholder {
+  color: rgb(135, 128, 128);
+  font-size: 18px;
+}
+
+.input:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+
+.outer2 {
+  width: 100%;
+  height: 110vh;
+  background-color: black;
+  background-image: url('https://www.thisiscolossal.com/wp-content/uploads/2024/01/spherewave.gif');
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  border-top: 8px solid #161515;
+}
+
+.container2 {
+  color: white;
+  position: relative;
+  height: 100%;
+}
+
+.card {
+  position: absolute;
+  top: 35%;
+  bottom: 20px;
+  width: 500px;
+  height: 300px;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.026);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  transition: all ease;
+  border: .1px solid white;
+
+}
+
+.card h1 {
+  height: 20%;
+  width: 100%;
+  padding: 0 auto;
+}
+
+.card p {
+  line-height: 30px;
+}
+
+.left-card {
+  left: -200px;
+  opacity: 0;
+}
+
+.right-card {
+  right: -200px;
+  opacity: 0;
+}
+
+.container2 :hover:not(h1, p) {
+  box-shadow: 0px 0px 50px 1px #4c83d13f;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #1d1c1c;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
+
+.color_btn {
+  position: absolute;
+  top: 15%;
+  --glow-color: rgb(217, 176, 255, 0.9);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: .25em solid var(--glow-color);
+  position: absolute;
+  right: -55%;
+  translate: -50%;
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color), 0 0 10em -5em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.color_btn::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.color_btn:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color), 0 0 10em -3em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+}
+
+.color_btn:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}
+
+.result {
+  --glow-color: rgb(217, 176, 255, 0.9);
+  position: relative;
+  top: 25%;
+  left: 5%;
+  width: 45%;
+  height: 10%;
+  background-color: #461172;
+  border-radius: 1em;
+  border: .25em solid var(--glow-color);
+  backdrop-filter: blur(2px);
+  color: white;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  height: 10%;
+}
+
+.file {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btnfle {
+  position: relative;
+  top:11%;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 0.5rem;
+}
+
+.row1 {
+  width: 100%;
+  height: 55%;
+  background-color: #270344;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.row2 {
+  width: 100%;
+  height: 45%;
+  background-color: #18111f;
+  padding: 15%;
+  margin: 0 auto;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.row2 h3 {
+  color: white;
+  width: 95%;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-bottom: 3px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ClrAi {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #8707ff;
+  margin-right: 10px;
+}
+
+.ClrHmn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+}
+
+#percentage {
+  color: white;
+  font-size: 65px;
+  font-weight: 500;
+  position: relative;
+  margin: 0 auto;
+}
+
+#progress-bar-container {
+  width: 320px;
+  height: 35px;
+  margin-top: 3%;
+  margin-right: 0%;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+  bottom: -20px;
+  left: 0px;
+}
+
+#progress-bar {
+  height: 100%;
+  background-color: #8707ff;
+  width: 0%;
+  border-radius: 25px;
+}
+
+input::-webkit-file-upload-button {
+  background-image: linear-gradient(
+    to right,
+    #8018ff,
+    #1700af,
+    #319197 100%,
+    #319197 200%
+  );
+  background-position-x: 0%;
+  background-size: 200%;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  padding: 1rem 1.25rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+input[type="file"] {
+  width: 330px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+#percentage_text{
+  margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 4px;
+    padding-top: 4px;
+    color: white;
+}
+
+.input_transparent{
+  background-color: rgb(255 255 255 / 24%);
+  color: #ffffff38;
+}

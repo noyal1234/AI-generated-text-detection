@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav>
+        <div class="box1">
+          <a href="/">Home</a>
+        </div>
+      </nav>
+    <div class="coln1">
+        <h1>Contact Us</h1>
+        <p>Need to get in touch with us? Either fill out the form with your inquiry or <br>find <a href="#">our
+                email</a> you'd like to contact</p>
+        <div class="social_icon">
+            <a href=""><img src="/static/instagram_4138164.png" alt=""></a>
+            <a href=""><img src="/static/facebook_4138166.png" alt=""></a>
+            <a href=""><img src="/static/104461_twitter_icon.png" alt=""></a>
+            <a href=""><img src="/static/8679332_whatsapp_icon.png" alt=""></a>
+        </div>
+        <a href="#"></a>
+        <div id="thank-you">
+            <p>Thank you for reaching out!</p>
+            <p>We have received your message and will get back to you as soon as possible.</p>
+        </div>
+    </div>
+    <div class="coln2">
+        <div class="container_contact">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input class="ip" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="ip" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button id="Button" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='contact.js') }}"></script>
+</body>
+
+</html>

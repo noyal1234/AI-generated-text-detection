@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.coln1{
+    width: 55%;
+    padding-left: 7%;
+    padding-right: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coln1 h1{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.coln1 p{
+    color: white;
+    font-size: 19px;
+    line-height: 30px;
+}
+
+.coln1 a{
+    color: #2f2ff3;
+}
+
+.coln2{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_contact {
+    width: 70%;
+    padding: 20px;
+    border: 1.7px solid rgb(232, 232, 232);
+    border-radius: 10px;
+    background-color:  #0d0b0b2c;
+    backdrop-filter: blur(2px);
+    color: white;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ip[type="text"],
+.ip[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #191a1a;
+    color: white;
+    font-size: 15px;
+}
+
+.ip,.form-group textareay:focus{
+    background-color: black;
+}
+
+.form-group textarea {
+    resize: none;
+    color: white;
+    font-size: 17px;
+}
+
+#Button {
+    display: block;
+    width: 45%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #7523ac;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, scale 0.1s ease;
+}
+
+#Button:hover {
+    background-color: #b754dc;
+    scale: 1.05;
+}
+
+#thank-you{
+    position: absolute;
+    bottom: 18%;
+    left: 8.5%;
+    display: none;
+}
+
+#thank-you p{
+    color: rgb(43 245 53);
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.social_icon{
+    width: 100%;
+    height: 40px;
+    margin-top: 32px;
+    margin-left: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.social_icon a{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.social_icon img{
+    width: 40px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethereal</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div class="box1">
+        <a href="#card">Mission</a>
+        <a href="/contact">Contact</a>
+        <a href="#card">About</a>
+      </div>
+      <div class="box2">
+      </div>
+    </nav>
+    <div class="main-heading">
+      <h1>Ethereal <br><span class="small-txt">AI Text Detector </span></h1>
+    </div>
+  </div>
+
+  <div class="outer1">
+    <h1>Discover the Truth About Your Text</h1>
+    <div class="container1">
+      <div class="col1">
+        <img id="delete" src="/static/delete_6861358.png" alt="">
+        <textarea class="input" name="text" id="textInput" cols="90" rows="90" placeholder="Type something here...."></textarea>
+
+        <div class="btn">
+          <button id="btnfle">
+            <input type="file" id="fileInput">
+          </button>
+
+          <button id="test" class="color_btn">Test</button>
+        </div>
+
+
+      </div>
+      <div class="col2" id="col2">
+        <div class="row1">
+          <h1 id="percentage">%</h1>
+          <h2 id="percentage_text">of text is likely AI-generated</h2>
+          <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+          </div>
+        </div>
+        <div class="row2">
+          <h3 id="Ai"><span><div class="ClrAi"></div> Ai content</span> <span id="Ai_cnt">0</span></h3>
+          <br>
+          <h3 id="Human"><span><div class="ClrHmn"></div> Human</span> <span id="Hmn_cnt">0</span></h3>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="outer2">
+    <div class="container2" id="card">
+      <div class="card left-card" id="leftCard">
+        <h1>Mission</h1>
+        <p>Welcome to our AI text detection website! We analyze AI-generated text prevalence using cutting-edge
+          technology. Our platform offers insights into AI influence across digital content. With intuitive features, we
+          help users understand AI's impact on language. Join us to explore the evolving intersection of technology and
+          communication.</p>
+      </div>
+      <div class="card right-card" id="rightCard">
+        <h1>About</h1>
+        <p>At our AI text detection website, we empower users to identify and quantify AI-generated text. Our mission is
+          to offer insights into AI's prevalence and impact across platforms. By showcasing AI text percentages, we
+          raise awareness and facilitate informed decisions. We're committed to delivering efficient tools for
+          transparency in an AI-driven world..</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>
